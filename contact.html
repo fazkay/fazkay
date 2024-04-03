@@ -64,34 +64,34 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
-<!--              <li class="nav-item">-->
-<!--                <a class="nav-link" href="pricing.html">Pricing</a>-->
-<!--              </li>-->
+              <!--              <li class="nav-item">-->
+              <!--                <a class="nav-link" href="pricing.html">Pricing</a>-->
+              <!--              </li>-->
               <li class="nav-item">
                 <a class="nav-link" href="faq.html">FAQ</a>
               </li>
-<!--              <li class="nav-item dropdown">-->
-<!--                <a-->
-<!--                  class="nav-link dropdown-toggle"-->
-<!--                  id="navbarDropdownBlog"-->
-<!--                  href="#"-->
-<!--                  role="button"-->
-<!--                  data-bs-toggle="dropdown"-->
-<!--                  aria-expanded="false"-->
-<!--                  >Blog</a-->
-<!--                >-->
-<!--                <ul-->
-<!--                  class="dropdown-menu dropdown-menu-end"-->
-<!--                  aria-labelledby="navbarDropdownBlog"-->
-<!--                >-->
-<!--                  <li>-->
-<!--                    <a class="dropdown-item" href="blog-home.html">Blog Home</a>-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <a class="dropdown-item" href="blog-post.html">Blog Post</a>-->
-<!--                  </li>-->
-<!--                </ul>-->
-<!--              </li>-->
+              <!--              <li class="nav-item dropdown">-->
+              <!--                <a-->
+              <!--                  class="nav-link dropdown-toggle"-->
+              <!--                  id="navbarDropdownBlog"-->
+              <!--                  href="#"-->
+              <!--                  role="button"-->
+              <!--                  data-bs-toggle="dropdown"-->
+              <!--                  aria-expanded="false"-->
+              <!--                  >Blog</a-->
+              <!--                >-->
+              <!--                <ul-->
+              <!--                  class="dropdown-menu dropdown-menu-end"-->
+              <!--                  aria-labelledby="navbarDropdownBlog"-->
+              <!--                >-->
+              <!--                  <li>-->
+              <!--                    <a class="dropdown-item" href="blog-home.html">Blog Home</a>-->
+              <!--                  </li>-->
+              <!--                  <li>-->
+              <!--                    <a class="dropdown-item" href="blog-post.html">Blog Post</a>-->
+              <!--                  </li>-->
+              <!--                </ul>-->
+              <!--              </li>-->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -148,7 +148,12 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form
+                  id="contactForm"
+                  data-sb-form-api-token="API_TOKEN"
+                  action="https://formspree.io/f/xleqpvqj"
+                  method="POST"
+                >
                   <!-- Name input-->
                   <div class="form-floating mb-3">
                     <input
@@ -157,6 +162,7 @@
                       type="text"
                       placeholder="Enter your name..."
                       data-sb-validations="required"
+                      name="full-name"
                     />
                     <label for="name">Full name</label>
                     <div
@@ -174,6 +180,7 @@
                       type="email"
                       placeholder="name@example.com"
                       data-sb-validations="required,email"
+                      name="email-address"
                     />
                     <label for="email">Email address</label>
                     <div
@@ -197,6 +204,7 @@
                       type="tel"
                       placeholder="(123) 456-7890"
                       data-sb-validations="required"
+                      name="phone-number"
                     />
                     <label for="phone">Phone number</label>
                     <div
@@ -215,6 +223,7 @@
                       placeholder="Enter your message here..."
                       style="height: 10rem"
                       data-sb-validations="required"
+                      name="message"
                     ></textarea>
                     <label for="message">Message</label>
                     <div
@@ -231,12 +240,8 @@
                   <div class="d-none" id="submitSuccessMessage">
                     <div class="text-center mb-3">
                       <div class="fw-bolder">Form submission successful!</div>
-                      To activate this form, sign up at
+                      To expedite your request, please call us at 408-916-3878
                       <br />
-                      <a
-                        href="https://startbootstrap.com/solution/contact-forms"
-                        >https://startbootstrap.com/solution/contact-forms</a
-                      >
                     </div>
                   </div>
                   <!-- Submit error message-->
